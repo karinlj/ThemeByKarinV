@@ -1,4 +1,4 @@
-# themeByKarinV
+# ThemeByKarinV
 
 ## Description
 Custom WordPress theme for my online presentation 
