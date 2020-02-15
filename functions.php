@@ -27,35 +27,21 @@ add_action( 'wp_enqueue_scripts', 'kv_style_resourses' );
 function google_fonts() {
     //Av någon anledning knasar det med wp_enqueue_script
     ?>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-
-    <!--<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet"> -->   
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 <?php
 }
 add_action('wp_head', 'google_fonts');
-
-
-
-/*
-function add_scripts() {
-    wp_register_script('custom_script', home_url() . '/wp-content/themes/themeByKarinV/custom_script.js', array( 'jquery' ));
-    wp_enqueue_script('custom_script');
-    
-}  
-add_action( 'wp_enqueue_scripts', 'add_scripts' );
-*/
-
     
 function favicon() { ?>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_stylesheet_directory_uri(); ?>/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri(); ?>/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri(); ?>/icon/favicon-16x16.png">
-    <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/icon/site.webmanifest">
-    <link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/icon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffc40d">
-    <meta name="theme-color" content="#ffffff">
-    
+<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_stylesheet_directory_uri(); ?>/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri(); ?>/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri(); ?>/icon/favicon-16x16.png">
+<link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/icon/site.webmanifest">
+<link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/icon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="theme-color" content="#ffffff">
+
 <?php }
 add_action('wp_head', 'favicon', 99);
 
@@ -89,10 +75,8 @@ if (function_exists('register_sidebar')) {
                            'after_widget'   => '</section> <!-- /widget-container -->',
                            'before_title'   => '<div class="widget-title"><h3>',
                            'after_title'    => '</h3></div>  <!-- /widget-title -->'                   
-));
-    
+));  
 }
-
 
 //ACF options page
 if (function_exists('acf_add_options_page')) {
@@ -102,7 +86,4 @@ if (function_exists('acf_add_options_page')) {
         'position' => 3.33
     ));
 }
-
-
-  
 ?>
