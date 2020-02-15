@@ -8,9 +8,7 @@ $color = get_sub_field('color_theme');
    <h2 class="section-heading text-center"><?php the_sub_field('heading'); ?></h2>
     
     <div class="boxes-inner">
-
         <div class="container">
-
            <?php
                 // check if the repeater field has rows
                 if( have_rows('boxes_row') ){
@@ -34,10 +32,6 @@ $color = get_sub_field('color_theme');
                                                 $col_class = 'col-12 col-lg-8';
                                         }
                                         ?>
-
-
-  
-         
          
                                         <div class="<?php echo $col_class; ?>">
 
@@ -53,8 +47,6 @@ $color = get_sub_field('color_theme');
                                             </div>
                                         </div>
          
-   
-
                                    <?php  
                                     }
                                 }

@@ -38,37 +38,36 @@ $hero_class = 'hero-section';
 
 
 <!--<section class="<?php echo $hero_class; ?>" <?php echo $style; ?>>-->
-    <section class="<?php echo $hero_class; ?>">
-          <div class="page-bg-zoom" <?php echo $style; ?>></div> <!--extra div for header image zoom onload-->
+<section class="<?php echo $hero_class; ?>">
+  <div class="page-bg-zoom" <?php echo $style; ?>></div>
+  <!--extra div for header image zoom onload-->
 
 
-              <div class="container">
-                      <div class="row">
-                          <div class="col-12">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
 
-                              <?php
+        <?php
                               if ( $hero_text_link) { ?>
-                              <a href="<?php echo $hero_text_link; ?>">
-                                  <?php
+        <a href="<?php echo $hero_text_link; ?>">
+          <?php
                                   }
                                   if ($hero_text) {
                                       ?>
-                                      <h2 class="hero-text">
-                                          <?php echo $hero_text ?>
-                                      </h2>
-                                      <?php
+          <h2 class="hero-text">
+            <?php echo $hero_text ?>
+          </h2>
+          <?php
                                   }
 
                                   if ( $hero_text_link) { ?>
-                              </a>
-                          <?php
+        </a>
+        <?php
                           }
                           ?>
 
-                          </div>
+      </div>
 
-                      </div>
-
-                  </div>
-
-    </section>
+    </div>
+  </div>
+</section>

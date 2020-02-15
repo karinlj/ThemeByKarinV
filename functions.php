@@ -27,9 +27,9 @@ add_action( 'wp_enqueue_scripts', 'kv_style_resourses' );
 function google_fonts() {
     //Av någon anledning knasar det med wp_enqueue_script
     ?>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">    
+    <!--<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet"> -->   
 <?php
 }
 add_action('wp_head', 'google_fonts');

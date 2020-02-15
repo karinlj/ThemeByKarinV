@@ -1,7 +1,7 @@
 <?php
 $color = get_sub_field('color_theme');  ?>
 
-<section class="blurb-columns <?php echo $color; ?>" data-aos="fade-up">
+<section class="blurb-columns <?php echo $color; ?>">
 
     <h2 class="section-heading text-center"><?php the_sub_field('heading'); ?></h2>
 

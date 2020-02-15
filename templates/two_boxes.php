@@ -36,7 +36,6 @@
 
                             //echo wp_get_attachment_image($img_id, 'large');
                             ?>  
-                        
                     <?php
                     } ?>
     
@@ -74,6 +73,7 @@
                         </div>
                                             
             </div>
+            <div class="overlay-hover"></div>
     
     
       <?php
