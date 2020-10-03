@@ -4,7 +4,7 @@ Author: Karin Ljunggren
 Author URI: http://karinljunggren.com
 */
 
-@import '_mixins.scss';
+@import "_mixins.scss";
 
 /*variables*/
 
@@ -24,16 +24,14 @@ $xl-max: 1309px;
 
 /* fonts */
 
-$themefont: 'Roboto',
-'Helvetica',
-sans-serif;
+$themefont: "Roboto", "Helvetica", sans-serif;
 
 $navfont: $themefont;
 $headingfont: $themefont;
 
 $themeBorder_radius: 3px;
-$themeBox_shadow: 0 7px 34px 0 rgba(0, 0, 0, .07),
-0 11px 34px 0 rgba(0, 0, 0, .04);
+$themeBox_shadow: 0 7px 34px 0 rgba(0, 0, 0, 0.07),
+  0 11px 34px 0 rgba(0, 0, 0, 0.04);
 /* colors */
 
 $themeBorderColor: #ebebeb;
@@ -70,7 +68,6 @@ $themedarkgrey: linear-gradient(40deg, #111111 33%, #333333);
 /*radio button-background colors for content fields and infoboxes*/
 .lightgrey,
 .white {
-
   h1,
   h2,
   h3,
@@ -93,7 +90,6 @@ $themedarkgrey: linear-gradient(40deg, #111111 33%, #333333);
 .darkgrey,
 .green,
 .orange {
-
   h1,
   h2,
   h3,
@@ -398,7 +394,6 @@ a {
 
 section.lightgrey,
 section.white {
-
   p,
   li {
     color: $themecolor;
@@ -559,8 +554,8 @@ a.btn-green {
     bottom: 0;
     left: 0;
     //  background:rgba(0,0,0,.5);
-    background: rgba(0, 0, 0, .3);
-    content: '';
+    background: rgba(0, 0, 0, 0.3);
+    content: "";
     display: block;
   }
 
@@ -571,7 +566,7 @@ a.btn-green {
     bottom: 0;
     left: 0;
     background: rgba(236, 95, 95, 0.8);
-    content: '';
+    content: "";
     display: block;
   }
 }
@@ -803,14 +798,8 @@ nav {
   }
 
   .text-part {
-    &:nth-of-type(odd) {
-      //second half
-      // margin-right: 5rem;
-    }
-
-    &:nth-of-type(even) {
-      //second half
-      // margin-left: 5rem;
+    p {
+      line-height: 1.7;
     }
   }
 
@@ -880,8 +869,8 @@ nav {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(0, 0, 0, .4);
-      content: '';
+      background: rgba(0, 0, 0, 0.4);
+      content: "";
       display: block;
       z-index: 0;
     }
@@ -949,7 +938,6 @@ nav {
       max-width: calc((1380px / 2) + 2.25rem);
 
       .text-part-inner {
-
         // overflow: hidden;
         @media all and (max-width: $sm-max) {
           padding: 5.6rem 0;
@@ -1083,7 +1071,6 @@ nav {
       max-width: calc((1380px / 2) + 2.25rem);
 
       .text-part-inner {
-
         @media all and (max-width: $sm-max) {
           padding: 5.6rem 0;
         }
@@ -1099,7 +1086,7 @@ nav {
     .text-on-hover {
       //general for both sides
       padding: 0 1.5rem;
-      max-width: calc((1380px /2) + 2.25rem);
+      max-width: calc((1380px / 2) + 2.25rem);
 
       @include d-flex;
       align-items: center;
@@ -1145,7 +1132,7 @@ nav {
             right: 0;
             top: 0;
             bottom: 0;
-            background: rgba(64, 64, 64, .5);
+            background: rgba(64, 64, 64, 0.5);
             opacity: 0;
             transition: all 0.7s ease;
           }
@@ -1169,7 +1156,7 @@ nav {
         right: 0;
         top: 0;
         bottom: 0;
-        background: rgba(64, 64, 64, .5);
+        background: rgba(64, 64, 64, 0.5);
         opacity: 0;
         transition: all 0.7s ease;
       }
@@ -1264,7 +1251,8 @@ nav {
       }
 
       .featured-image {
-        box-shadow: 0 7px 34px 0 rgba(0, 0, 0, .07), 0 11px 34px 0 rgba(0, 0, 0, .04);
+        box-shadow: 0 7px 34px 0 rgba(0, 0, 0, 0.07),
+          0 11px 34px 0 rgba(0, 0, 0, 0.04);
       }
     }
 
@@ -1327,11 +1315,11 @@ nav {
     &.blurb-small {
       p {
         @media all and (min-width: $sm-min) {
-          font-size: .825rem;
+          font-size: 0.825rem;
           margin-bottom: 1rem;
 
           &.sub-title {
-            margin-bottom: .825rem;
+            margin-bottom: 0.825rem;
           }
         }
 
@@ -1344,7 +1332,7 @@ nav {
         font-size: 1.25rem;
 
         @media all and (min-width: $sm-min) {
-          margin-bottom: .75rem;
+          margin-bottom: 0.75rem;
         }
 
         @media all and (min-width: $sm-min) and (max-width: $sm-max) {
@@ -1439,12 +1427,6 @@ nav {
   a {
     font-weight: 900;
   }
-
-  a.site {
-    /*  font-weight: 400;
-  font-style: italic;
-  color: aqua;*/
-  }
 }
 
 #experience,
@@ -1465,20 +1447,18 @@ nav {
   }
 
   section.info {
-
-    h5 {
+    a {
       color: #fff;
       text-align: center;
-      padding: 2rem 0;
+      font-size: 1rem;
     }
 
-    .experience-list,
-    .education-list {
-
+    .experience_list,
+    .education_list {
       li {
-        padding: 0.8rem 0 1rem 0;
-        font-size: 0.9em;
+        font-size: 0.8rem;
         font-weight: 400;
+        padding: 0.8rem 0 1rem 0;
 
         @media all and (min-width: $md-min) {
           font-size: 1em;
@@ -1486,89 +1466,93 @@ nav {
 
         p {
           color: #fff;
+          font-size: 0.9rem;
 
           &.linkstyle {
             font-weight: 600;
-            line-height: inherit
+            line-height: inherit;
           }
+        }
+        .course {
+          font-size: 0.9rem;
+        }
+        .course_heading {
+          padding-bottom: 0.8rem;
         }
 
         span {
           display: block;
-          font-size: 0.8em;
-          padding: 0.4rem 0 0.2rem 0;
+          font-size: 0.9em;
+          padding: 0.5rem 0 0.5rem 0;
           color: $themecolor;
         }
       }
     }
 
-    .education-list {
-      div {
-        line-height: 1.2rem;
-        color: #fff;
-        font-size: 1em;
+    .experience_list {
+      li {
+        padding: 1.2rem 0;
       }
+    }
+    .education_list {
+      .education_list_item {
+        section {
+          padding: 0.2rem 0;
+          .getmoreinfo {
+            display: flex;
+            align-items: baseline;
+            cursor: pointer;
 
-      button {
-        background: transparent;
-        border: none;
-        color: #fff;
-        font-weight: 100;
-        display: none;
-        padding-left: 0;
+            .course {
+              line-height: 1.7;
 
-        @media all and (min-width: $md-min) {
-          display: inline-block;
-        }
-      }
+              &:before {
+                font-family: "Font Awesome 5 Free";
+                margin-right: 0.3rem;
+                font-size: 0.9rem;
+                content: "\f078";
+                font-weight: 600;
+                transition: max-height 0.5s ease-out;
+              }
+            }
 
-      ul {
-        margin: 0;
-        padding: 0;
-        list-style: disc;
-        list-style-position: inside;
-        margin-top: 0.5rem;
-
-        @media all and (min-width: $md-min) {
-          list-style: none;
-        }
-
-        li {
-          color: #fff;
-          line-height: 1.2rem;
-          padding-bottom: 0.3rem;
-
-          &:first-of-type {
-            padding-top: 0;
+            .course.active {
+              &::before {
+                content: "\f077";
+              }
+            }
           }
-        }
-      }
+          .moreinfo {
+            padding: 0 0 1rem 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            .infolist {
+              margin-left: 5rem;
+              list-style: disc;
+              list-style-position: inside;
+              margin-top: 0.5rem;
 
-      .moreinfo {
-        display: none;
-        margin-left: 5rem;
-
-        li {
-          list-style: disc;
+              li {
+                color: #fff;
+                line-height: 1.2rem;
+                padding-bottom: 0.3rem;
+                list-style: disc;
+                font-size: 0.8rem;
+                @media all and (min-width: $md-min) {
+                  font-size: 0.9rem;
+                }
+              }
+            }
+            &.open {
+              max-height: 400px;
+            }
+          }
         }
       }
     }
   }
 }
-
-
-#getmoreinfo1,
-#getmoreinfo2,
-#getmoreinfo3,
-#getmoreinfo4,
-#getmoreinfo5,
-#getmoreinfo6,
-#getmoreinfo7,
-#getmoreinfo8,
-#getmoreinfo9:hover {
-  cursor: pointer;
-}
-
 
 /*********************
    footer
@@ -1652,7 +1636,8 @@ nav {
     background: transparent;
     margin-top: 2rem;
 
-    @media all and (min-width: $md-min) {}
+    @media all and (min-width: $md-min) {
+    }
 
     p {
       color: #737373;
@@ -1689,8 +1674,8 @@ nav {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, .5);
-    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
     display: block;
   }
 
@@ -1818,7 +1803,7 @@ nav {
 
       @media all and (min-width: $xl-min) {
         //max-width half of container
-        max-width: calc((1380px /2) + 2.25rem);
+        max-width: calc((1380px / 2) + 2.25rem);
       }
     }
   }

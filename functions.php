@@ -17,7 +17,7 @@ function kv_style_resourses() {
 
     wp_enqueue_style('style', get_stylesheet_uri(), array(), '1.0.0', 'all');
     
-    wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css' );
+    wp_enqueue_style('font-awesome-5', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css', array(), null);
 
     wp_enqueue_style( 'kv_theme-custom', get_stylesheet_directory_uri() . '/css/custom.css' );
 
