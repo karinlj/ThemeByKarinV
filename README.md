@@ -1,11 +1,12 @@
 # ThemeByKarinV
 
 ## Description
-Custom WordPress theme for my online presentation   
+Custom WordPress theme for my online presentation.
+
+##### Url:  http://karinljunggren.com/
 
 ![Screenshot](/images/screenshot.jpg?raw=true "Screenshot")
 
-##### Url:  http://karinljunggren.com/
 
 ## Built With
 * WordPress
