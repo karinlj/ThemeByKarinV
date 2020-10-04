@@ -503,7 +503,9 @@ a.btn-green {
           font-size: 0;
         }
 
-        .fa {
+        .fab,
+        .fas {
+          font-weight: 900;
           margin: 0 0.4rem;
           padding: 8px;
           font-size: 18px;
@@ -958,7 +960,8 @@ nav {
         .boxes-icon {
           margin-bottom: 1rem;
 
-          i.fa {
+          i.fab,
+          i.fas {
             font-size: 2.4rem;
             color: #fff;
           }
@@ -1387,7 +1390,8 @@ nav {
     .boxes-icon {
       margin-bottom: 1rem;
 
-      i.fa {
+      i.fab,
+      i.fas {
         font-size: 2.7rem;
         color: #fff;
       }
@@ -1471,6 +1475,7 @@ nav {
           &.linkstyle {
             font-weight: 600;
             line-height: inherit;
+            font-size: 1rem;
           }
         }
         .course {
@@ -1610,10 +1615,11 @@ nav {
         }
       }
 
-      .fa {
+      .fab,
+      .fas {
         padding-left: 0;
         margin-left: 0;
-
+        font-weight: 900;
         font-size: 20px;
         // width: 41px;
         padding-right: 0.6rem;

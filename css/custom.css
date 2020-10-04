@@ -489,7 +489,9 @@ a.btn-green:hover {
 .header-wrapper .social-section ul.social li.social-item a {
   font-size: 0;
 }
-.header-wrapper .social-section ul.social li.social-item .fa {
+.header-wrapper .social-section ul.social li.social-item .fab,
+.header-wrapper .social-section ul.social li.social-item .fas {
+  font-weight: 900;
   margin: 0 0.4rem;
   padding: 8px;
   font-size: 18px;
@@ -892,7 +894,8 @@ nav > .toggle {
 .boxes-inner .box .text-part-outer .text-part-inner .boxes-icon {
   margin-bottom: 1rem;
 }
-.boxes-inner .box .text-part-outer .text-part-inner .boxes-icon i.fa {
+.boxes-inner .box .text-part-outer .text-part-inner .boxes-icon i.fab,
+.boxes-inner .box .text-part-outer .text-part-inner .boxes-icon i.fas {
   font-size: 2.4rem;
   color: #fff;
 }
@@ -1273,7 +1276,8 @@ nav > .toggle {
 .boxes-inner .boxes-item .boxes-icon {
   margin-bottom: 1rem;
 }
-.boxes-inner .boxes-item .boxes-icon i.fa {
+.boxes-inner .boxes-item .boxes-icon i.fab,
+.boxes-inner .boxes-item .boxes-icon i.fas {
   font-size: 2.7rem;
   color: #fff;
 }
@@ -1355,6 +1359,7 @@ nav > .toggle {
 .cv-wrapper section.info .education_list li p.linkstyle {
   font-weight: 600;
   line-height: inherit;
+  font-size: 1rem;
 }
 .cv-wrapper section.info .experience_list li .course,
 .cv-wrapper section.info .education_list li .course {
@@ -1492,9 +1497,11 @@ nav > .toggle {
   opacity: 0.7;
   text-decoration: none;
 }
-.footer-main ul.social li.social-item .fa {
+.footer-main ul.social li.social-item .fab,
+.footer-main ul.social li.social-item .fas {
   padding-left: 0;
   margin-left: 0;
+  font-weight: 900;
   font-size: 20px;
   padding-right: 0.6rem;
   padding-bottom: 0.6rem;
@@ -1504,7 +1511,8 @@ nav > .toggle {
   color: #2e9ce6;
 }
 @media all and (min-width: 768px) {
-  .footer-main ul.social li.social-item .fa {
+  .footer-main ul.social li.social-item .fab,
+.footer-main ul.social li.social-item .fas {
     margin: 0 0.4rem;
     padding: 8px;
     padding-bottom: 0;

@@ -48,7 +48,8 @@
                                     if (get_sub_field('icon')) { ?>
 
                                         <p class="boxes-icon">
-                                            <i class="fa fa-<?php echo $icon; ?>"></i>
+                                            <i class="fab fa-<?php echo $icon; ?>"></i>
+                                            <i class="fas fa-<?php echo $icon; ?>"></i>
                                         </p>
                                 <?php
                                   } ?>

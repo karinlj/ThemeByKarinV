@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
   $(".getmoreinfo").click(function () {
     $(this).next().toggleClass("open");
+    $(".course").toggleClass("active");
   });
 
   /*My mobile menu*/

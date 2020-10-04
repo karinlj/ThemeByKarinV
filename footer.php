@@ -23,7 +23,7 @@
                                 $link = get_field('mail_link', 'option'); ?> 
 
                                       <li class="social-item">
-                                             <a href="mailto:<?php echo $link; ?>" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i>kaljunggren@gmail.com</a>
+                                             <a href="mailto:<?php echo $link; ?>" target="_top"><i class="fas fa-envelope" aria-hidden="true"></i>kaljunggren@gmail.com</a>
                                       </li>
                                 <?php
                                 if(have_rows('social_icons','option')) {  // check if repeater field has rows 
@@ -37,7 +37,7 @@
                                                     $social_text = get_sub_field('text');  
                                                     ?>
                                                         <li class="social-item">
-                                                            <a href="<?php echo $social_url; ?>"><i class="fa fa-<?php echo $social_site; ?>"></i><?php echo $social_text; ?></a>
+                                                            <a href="<?php echo $social_url; ?>"><i class="fab fa-<?php echo $social_site; ?>"></i><?php echo $social_text; ?></a>
                                                         </li>
                                                 <?php
 
