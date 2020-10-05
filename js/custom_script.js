@@ -1,12 +1,13 @@
 jQuery(document).ready(function ($) {
+  //toggle course info
   $(".getmoreinfo").click(function () {
     $(this).next().toggleClass("open");
-    $(".course").toggleClass("active");
+    //console.log(event.target);
+    $(this).children(".course").toggleClass("active");
   });
 
   /*My mobile menu*/
   /*when click on veggoburger...add or remove class */
-
   $(".toggle").click(function () {
     $(".nav-mobile").toggleClass("nav-mobile-open");
   });
